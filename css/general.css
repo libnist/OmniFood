@@ -1,3 +1,10 @@
+*:focus{
+    outline: none;
+    /* outline: 4px dotted #e67e22; */
+    /* outline-offset: 8px; */
+    box-shadow: 0 0 0 0.8rem rgba(230, 230, 230, 0.5);
+}
+
 .margin-right-sm {
     margin-right: 1.6rem !important;
 }
@@ -10,6 +17,7 @@
     text-align: center;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     background-color: #e67e22;
@@ -21,6 +29,22 @@
     text-decoration: none;
     font-weight: 600;
     transition: all 0.2s;
+
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fff;
+    color: #555;
 }
 
 .btn--full:link,
@@ -33,6 +57,7 @@
 .btn--full:active {
     background-color: #cf711f;
 }
+
 
 .btn--outline:link,
 .btn--outline:visited {
