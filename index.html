@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <header class="header nav-open">
+    <header class="header" id="header">
         <a href="#">
             <img src="img/omnifood-logo.png" alt="Omnifood Logo" class="logo">
         </a>
@@ -39,8 +39,8 @@
         </nav>
 
         <button class="btn-mobile-nav">
-            <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
-            <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+            <ion-icon name="menu-outline" id="btn-open-nav" class="icon-mobile-nav"></ion-icon>
+            <ion-icon name="close-outline" id="btn-close-nav" class="icon-mobile-nav"></ion-icon>
         </button>
     </header>
 
@@ -711,6 +711,17 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        document.getElementById("btn-open-nav").addEventListener("click", () => {
+            console.log()
+            document.getElementById("header").classList.add("nav-open")
+        })
+
+        document.getElementById("btn-close-nav").addEventListener("click", () => {
+            document.getElementById("header").classList.remove("nav-open")
+        })
+    </script>
 </body>
 
 </html>
